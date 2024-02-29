@@ -22,7 +22,7 @@ const commentdata = [
     post_id: 3
   },
   {
-    comment_text: 'I am probably corect....maybe..',
+    comment_text: 'I am probably correct....maybe..',
     user_id: 5,
     post_id: 2
   },
