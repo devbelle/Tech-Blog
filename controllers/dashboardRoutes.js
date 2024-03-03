@@ -41,8 +41,9 @@ router.get('/', withAuth, async (req, res) => {
     }      
   });
 
+
   //get single post
-  router.get('/edit/:id', withAuth, async (req, res) => {
+router.get('/edit/:id', withAuth, async (req, res) => {
     try {
     const postData = await Post.findByPk(req.params.id, {
       attributes: [
