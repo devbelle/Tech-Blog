@@ -19,6 +19,8 @@
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard"><span class="glyphicon glyphicon-user"></span>{{ username }}'s Dashboard</a>
+        <a href="/edit-post">Edit</a>
+        <a href="/single-post">Comment</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
@@ -38,5 +40,5 @@
 </html>
 
 {{#if loggedIn}}
-<script src="/js/logout.js"></script>
+<script src="/public/js/logout.js"></script>
 {{/if}}
