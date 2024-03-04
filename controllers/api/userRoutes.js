@@ -68,7 +68,18 @@ router.post('/', async (req, res) => {
   });
 
 
-  //login
+  //login, needs a get route
+  // router.get('/login', async (req, res) => {
+  //   try{
+  //   const userData = await User.findAll();
+  //   res.status(200).json(userData);
+  //   res.render('login', userData)
+  //   } catch (err) {
+  //       res.status(500).json(err);
+  //   }
+      
+  // });
+
   router.post('/login', async (req, res) => {
     try {
       const userData = await User.findOne({ where: { email: req.body.email } });

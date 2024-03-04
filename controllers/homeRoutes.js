@@ -78,4 +78,15 @@ router.get('/', async (req, res) => {
     }
   });
 
+  router.get('/login', async (req, res) => {
+    try{
+    //const userData = await User.findAll();
+    //res.status(200).json(userData);
+    res.render('login')
+    } catch (err) {
+        res.status(500).json(err);
+    }
+      
+  });
+
   module.exports = router;
