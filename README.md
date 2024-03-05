@@ -11,6 +11,7 @@ To access, copy the repository in github, then use the git clone function in com
 Link below:
 
 Screenshot
+![Screenshot](tech-blog-screenshot.png)
 
 ##Credits
 
